@@ -10,7 +10,7 @@ document.getElementById("send-btn").addEventListener("click", function () {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
-            "Authorization": "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"
+            "Authorization": "Bearer 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"
         },
         body: JSON.stringify({
             model: "gpt-3.5-turbo",
