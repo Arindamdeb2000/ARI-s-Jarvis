@@ -1,10 +1,61 @@
-</style>
-</head>
-<body>
-    <div class="chat-container">
-        <img src="1728714034242 (1).jpeg" class="avatar" alt="ARI's Avatar">
-        <h2>ARI's Jarvis</h2>
-        <div class="chat-box" id="chatBox">Welcome to ARI's Jarvis!</div>
-        <input type="text" id="userInput" class="user-input" placeholder="Type your message...">
-        <button onclick="sendMessage()">Send</button>
-    </div>
+body {
+    background-color: #0d0d0d;
+    color: #0ff;
+    font-family: 'Courier New', monospace;
+    text-align: center;
+}
+
+.chat-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #0ff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #0ff;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #0ff;
+}
+
+.chat-box {
+    height: 300px;
+    overflow-y: auto;
+    background: #111;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    background: #222;
+    color: #0ff;
+    border: 1px solid #0ff;
+    border-radius: 5px;
+}
+
+button {
+    background: #0ff;
+    color: #111;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #00aaff;
+}
